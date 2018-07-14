@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Profile from './Profile';
+import ShotChart from './ShotChart';
 import nba from 'nba';
 
 class Main extends Component {
@@ -21,6 +22,12 @@ class Main extends Component {
     return (
       <div className="main">
         <Profile playerInfo={this.state.playerInfo} />
+        <ShotChart
+          playerId={this.state.playerId}
+          minCount={2}
+          displayTooltip={true}
+          chartType="hexbin"
+        />
       </div>
     );
   }
