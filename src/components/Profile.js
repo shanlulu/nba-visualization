@@ -31,7 +31,7 @@ class Profile extends Component {
         </div>
         <img
           className="team-logo"
-          alt="team logo"
+          alt="team"
           src={`${TEAM_LOGO_URL_PREFIX}/${teamAbbreviation}_logo.svg`}
         />
         <div className="profile-entry">
